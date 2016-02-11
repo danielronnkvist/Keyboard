@@ -160,7 +160,7 @@ http://www.opensource.org/licenses/mit-license.php
 		if (base.el.ownerDocument !== document) {
 			tmp = tmp.add(base.el.ownerDocument);
 		}
-		tmp.bind('mousedown keyup touchstart checkkeyboard '.split(' ')
+		tmp.bind('mousedown keyup touchstart checkkeyboard DOMNodeRemoved '.split(' ')
 			.join(base.namespace + ' '), base.checkClose);
 
 		// Display keyboard on focus
